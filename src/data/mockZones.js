@@ -1,0 +1,97 @@
+// mirrors part of GET /api/analysis — detected zones
+
+export const mockZones = [
+  // --- Fair Value Gaps ---
+  {
+    id: 'fvg-001',
+    type: 'FVG',
+    direction: 'bullish',
+    top: 2017.80,
+    bottom: 2013.20,
+    formedAt: 1792317600,
+    status: 'fresh',          // fresh | partly_mitigated | fully_mitigated
+    timeframe: '1h',
+    tooltip: 'Fair Value Gap — a price imbalance left by a fast move. Price often returns to fill it.',
+  },
+  {
+    id: 'fvg-002',
+    type: 'FVG',
+    direction: 'bearish',
+    top: 2029.40,
+    bottom: 2025.10,
+    formedAt: 1792375200,
+    status: 'partly_mitigated',
+    timeframe: '1h',
+    tooltip: 'Fair Value Gap — a price imbalance left by a fast move. Price often returns to fill it.',
+  },
+  {
+    id: 'fvg-003',
+    type: 'FVG',
+    direction: 'bullish',
+    top: 2010.60,
+    bottom: 2007.30,
+    formedAt: 1792152000,
+    status: 'fully_mitigated',
+    timeframe: '4h',
+    tooltip: 'Fair Value Gap — a price imbalance left by a fast move. Price often returns to fill it.',
+  },
+  {
+    id: 'fvg-004',
+    type: 'FVG',
+    direction: 'bullish',
+    top: 2022.50,
+    bottom: 2019.10,
+    formedAt: 1792339200,
+    status: 'fresh',
+    timeframe: '4h',
+    tooltip: 'Fair Value Gap — a price imbalance left by a fast move. Price often returns to fill it.',
+  },
+
+  // --- Order Blocks ---
+  {
+    id: 'ob-001',
+    type: 'OrderBlock',
+    direction: 'bullish',
+    top: 2012.90,
+    bottom: 2009.50,
+    formedAt: 1792051200,
+    status: 'fresh',
+    timeframe: '1h',
+    tooltip: 'Order Block — the last bearish candle before a strong bullish move that broke structure. Traders expect price to react when it returns here.',
+  },
+  {
+    id: 'ob-002',
+    type: 'OrderBlock',
+    direction: 'bearish',
+    top: 2031.80,
+    bottom: 2028.20,
+    formedAt: 1792245600,
+    status: 'partly_mitigated',
+    timeframe: '4h',
+    tooltip: 'Order Block — the last bullish candle before a strong bearish move. Potential resistance area.',
+  },
+
+  // --- Supply / Demand Zones ---
+  {
+    id: 'sdz-001',
+    type: 'SupplyZone',
+    direction: 'bearish',
+    top: 2035.00,
+    bottom: 2030.50,
+    formedAt: 1791856800,
+    status: 'fresh',
+    timeframe: '1d',
+    tooltip: 'Supply Zone — a small consolidation area before a strong move down. Sellers were active here.',
+  },
+  {
+    id: 'sdz-002',
+    type: 'DemandZone',
+    direction: 'bullish',
+    top: 2006.00,
+    bottom: 2002.80,
+    formedAt: 1792029600,
+    status: 'fresh',
+    timeframe: '1d',
+    tooltip: 'Demand Zone — a small consolidation area before a strong move up. Buyers were active here.',
+  },
+];

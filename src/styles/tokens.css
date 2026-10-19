@@ -1,0 +1,180 @@
+/* ===================================================
+   AUTHENTIC FINTECH DESIGN TOKENS
+   TradeAI — Institutional Trading Analysis System
+   =================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ── Bright Canvas & Surfaces (Default: Bright Institutional Light) ── */
+  --bg-base:        #f8fafc;        /* High-clarity subtle slate background */
+  --bg-surface:     #ffffff;        /* Pure crisp card and panel surface */
+  --bg-surface-2:   #f1f5f9;        /* Segment tracks, table headers, inset wells */
+  --bg-surface-3:   #e2e8f0;        /* Subtle divider wells, hover states */
+  --bg-card-hover:  #fafafa;        /* Subtle card hover tint */
+  --bg-overlay:     rgba(15, 23, 42, 0.4); /* Backdrop for modals */
+
+  /* ── Borders & Dividers ─────────────────────────── */
+  --border-dim:     #f1f5f9;        /* Delicate internal lines */
+  --border-base:    #e2e8f0;        /* Primary crisp card border */
+  --border-bright:  #cbd5e1;        /* Interactive / hover border */
+  --border-focus:   #2563eb;        /* Focused input border */
+
+  /* ── Brand / Core Accent (Deep Sapphire Blue) ───── */
+  --accent:         #2563eb;        /* Authoritative institutional blue */
+  --accent-hover:   #1d4ed8;
+  --accent-dim:     #eff6ff;        /* Soft sapphire tint */
+  --accent-border:  #bfdbfe;
+  --accent-glow:    rgba(37, 99, 235, 0.12);
+
+  /* ── Market Direction (Sophisticated Emerald & Crimson) ── */
+  --bull:           #059669;        /* Deep forest emerald */
+  --bull-hover:     #047857;
+  --bull-dim:       #ecfdf5;        /* Soft sage surface */
+  --bull-border:    #a7f3d0;
+  --bull-text:      #065f46;
+
+  --bear:           #dc2626;        /* Deep ruby crimson */
+  --bear-hover:     #b91c1c;
+  --bear-dim:       #fef2f2;        /* Soft rose surface */
+  --bear-border:    #fecaca;
+  --bear-text:      #991b1b;
+
+  /* ── Probability Rating ─────────────────────────── */
+  --prob-high:      #059669;
+  --prob-mid:       #d97706;        /* Warm amber */
+  --prob-low:       #dc2626;
+
+  /* ── Status Indicators ───────────────────────────── */
+  --status-ok:      #059669;
+  --status-warn:    #d97706;
+  --status-error:   #dc2626;
+  --status-neutral: #64748b;
+
+  /* ── Typography & Text Hierarchy ─────────────────── */
+  --text-primary:   #0f172a;        /* Deep midnight slate for high contrast */
+  --text-secondary: #475569;        /* Readable slate for labels & body */
+  --text-muted:     #94a3b8;        /* Soft captions, timestamps, units */
+  --text-accent:    #2563eb;
+  --text-bull:      #047857;
+  --text-bear:      #991b1b;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-2xs: 10px;
+  --text-xs:  11px;
+  --text-sm:  12px;
+  --text-md:  14px;
+  --text-lg:  16px;
+  --text-xl:  18px;
+  --text-2xl: 22px;
+  --text-3xl: 28px;
+  --text-4xl: 36px;
+
+  --weight-normal:   400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-black:    800;
+
+  --leading-tight:   1.25;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+
+  /* ── Spacing Scale ───────────────────────────────── */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+
+  /* ── Border Radii (Modern, disciplined geometry) ─── */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ── Authentic Multi-Layer Shadows ───────────────── */
+  --shadow-xs:     0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-sm:     0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  --shadow-md:     0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg:     0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+  --shadow-xl:     0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+  --shadow-card:   0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.03);
+  --shadow-drawer: -6px 0 24px -2px rgba(15, 23, 42, 0.08);
+
+  /* ── Layout Dimensions ───────────────────────────── */
+  --sidebar-w: 240px;
+  --topbar-h:  60px;
+  --panel-w:   360px;
+
+  /* ── Chart Specifics (Light) ─────────────────────── */
+  --chart-bg:        #ffffff;
+  --chart-grid:      #f1f5f9;
+  --chart-text:      #64748b;
+  --chart-crosshair: #94a3b8;
+  --chart-up:        #059669;
+  --chart-down:      #dc2626;
+}
+
+/* ===================================================
+   DARK THEME OVERRIDE (Clean Slate, Not Neon Vibecoded)
+   =================================================== */
+[data-theme="dark"] {
+  --bg-base:        #0b0f17;        /* Rich deep slate */
+  --bg-surface:     #131926;        /* Elevated card surface */
+  --bg-surface-2:   #1a2336;        /* Inset well */
+  --bg-surface-3:   #232f48;
+  --bg-card-hover:  #171f2e;
+  --bg-overlay:     rgba(0, 0, 0, 0.7);
+
+  --border-dim:     #1a2336;
+  --border-base:    #222d42;
+  --border-bright:  #344463;
+  --border-focus:   #3b82f6;
+
+  --accent:         #3b82f6;
+  --accent-hover:   #60a5fa;
+  --accent-dim:     rgba(59, 130, 246, 0.12);
+  --accent-border:  rgba(59, 130, 246, 0.35);
+
+  --bull:           #10b981;
+  --bull-hover:     #059669;
+  --bull-dim:       rgba(16, 185, 129, 0.14);
+  --bull-border:    rgba(16, 185, 129, 0.35);
+  --bull-text:      #34d399;
+
+  --bear:           #f43f5e;
+  --bear-hover:     #e11d48;
+  --bear-dim:       rgba(244, 63, 94, 0.14);
+  --bear-border:    rgba(244, 63, 94, 0.35);
+  --bear-text:      #fb7185;
+
+  --text-primary:   #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
+  --text-accent:    #60a5fa;
+  --text-bull:      #34d399;
+  --text-bear:      #fb7185;
+
+  --shadow-xs:     0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-sm:     0 2px 4px 0 rgba(0, 0, 0, 0.35);
+  --shadow-md:     0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  --shadow-lg:     0 12px 24px -4px rgba(0, 0, 0, 0.5);
+  --shadow-card:   0 1px 4px 0 rgba(0, 0, 0, 0.4);
+  --shadow-drawer: -6px 0 30px rgba(0, 0, 0, 0.6);
+
+  --chart-bg:        #131926;
+  --chart-grid:      #1a2336;
+  --chart-text:      #94a3b8;
+  --chart-crosshair: #475569;
+  --chart-up:        #10b981;
+  --chart-down:      #f43f5e;
+}

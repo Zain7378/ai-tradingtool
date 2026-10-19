@@ -1,0 +1,78 @@
+.tooltip-anchor {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tooltip-term {
+  border-bottom: 1px dotted var(--text-muted);
+  cursor: help;
+  color: inherit;
+  transition: border-color var(--duration-fast);
+}
+
+.tooltip-term:hover {
+  border-color: var(--accent);
+}
+
+.tooltip-box {
+  position: absolute;
+  z-index: 1000;
+  width: 260px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  animation: fadeIn 150ms var(--ease-out);
+  pointer-events: none;
+}
+
+[data-theme="light"] .tooltip-box {
+  background: #0f172a;
+  border-color: #1e293b;
+  color: #f8fafc;
+}
+
+.tooltip-box--top {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-box--bottom {
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-box--right {
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip-term-label {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+[data-theme="light"] .tooltip-term-label {
+  color: #60a5fa;
+}
+
+.tooltip-definition {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: var(--leading-normal);
+}
+
+[data-theme="light"] .tooltip-definition {
+  color: #cbd5e1;
+}

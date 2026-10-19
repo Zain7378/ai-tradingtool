@@ -1,0 +1,118 @@
+/* ── Multi-Timeframe Alignment Panel — Institutional Confluence ── */
+
+.mtf-alignment-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.mtf-align-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.mtf-align-title {
+  font-size: var(--text-md);
+  font-weight: var(--weight-bold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.mtf-align-score {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  font-family: var(--font-mono);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mtf-align-score--bull {
+  background: var(--bull-dim);
+  color: var(--bull);
+  border: 1px solid var(--bull-border);
+}
+
+.mtf-align-score--bear {
+  background: var(--bear-dim);
+  color: var(--bear);
+  border: 1px solid var(--bear-border);
+}
+
+.mtf-align-score--mixed {
+  background: rgba(217, 119, 6, 0.1);
+  color: var(--status-warn);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+}
+
+/* ── Align Rows ─────────────────────────────────────────── */
+.mtf-align-rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.mtf-align-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: 10px 14px;
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  transition: border-color var(--duration-fast);
+}
+
+.mtf-align-row:hover {
+  border-color: var(--border-base);
+}
+
+.mtf-align-role {
+  width: 48px;
+  font-size: 11px;
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.mtf-align-tf {
+  width: 42px;
+  font-weight: var(--weight-bold);
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  font-size: var(--text-sm);
+}
+
+.mtf-align-note {
+  margin-left: auto;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-weight: var(--weight-medium);
+}
+
+/* ── Alignment Conclusion Callout ───────────────────────── */
+.mtf-align-conclusion {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  padding: 12px 16px;
+  background: var(--bg-surface-2);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--accent);
+  border-top: 1px solid var(--border-subtle);
+  border-right: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin: 0;
+}

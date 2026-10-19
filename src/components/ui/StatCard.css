@@ -1,0 +1,98 @@
+.stat-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-md);
+  padding: var(--sp-4) var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  transition: all var(--duration-fast) var(--ease-out);
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+
+.stat-card:hover {
+  border-color: var(--border-bright);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.stat-card--accent {
+  border-color: var(--accent-border);
+  background: var(--bg-surface);
+}
+
+.stat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-card-label {
+  font-size: 11px;
+  font-weight: var(--weight-bold);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-card-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+.stat-card--accent .stat-card-icon {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+.stat-card-value-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.stat-card-value {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.stat-card-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: var(--weight-semibold);
+  font-family: var(--font-mono);
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+}
+
+.stat-card-trend--up {
+  background: var(--bull-dim);
+  color: var(--bull-text);
+  border: 1px solid var(--bull-border);
+}
+
+.stat-card-trend--down {
+  background: var(--bear-dim);
+  color: var(--bear-text);
+  border: 1px solid var(--bear-border);
+}
+
+.stat-card-sub {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  line-height: var(--leading-tight);
+}
